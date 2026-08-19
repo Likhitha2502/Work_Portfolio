@@ -5,7 +5,7 @@
 
 export const profile = {
   name: "Likhitha Shrinivas Gudalwar",
-  role: "Front-End Software Engineer",
+  role: "Software Engineer",
   headline:
     "Building responsive, high-performance interfaces for real-time, data-dense systems.",
   location: "Malden, MA",
@@ -32,8 +32,8 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    title: "Front-End Software Engineer",
-    org: "AES Corporation - Intellinet Network Control Center (INCC)",
+    title: "Software Engineer",
+    org: "AES Corporation",
     dates: "July 2022 - Present",
     bullets: [
       "Eliminated freezing on a data-heavy geo page by implementing React virtualization within a Mapbox (react-map-gl) interface, rendering 11,000+ item datasets in ~2 seconds once data was received from the backend.",
@@ -74,7 +74,7 @@ export const featuredProjects: ProjectEntry[] = [
       "Evaluated UI color contrast, text readability, and overall usability for users with accessibility needs using browser accessibility tools.",
     ],
     tags: ["React", "Redux", "JWT", "Jest", "Angular 19", "NgRx"],
-    repoUrl: "https://github.com/Likhitha2502", // TODO: replace with the exact repo URL
+    repoUrl: "https://github.com/Likhitha2502/ProcastiNot_Project",
   },
   {
     name: "Readopotamus",
@@ -87,7 +87,7 @@ export const featuredProjects: ProjectEntry[] = [
       "Integrated the Open Library REST API for book search and metadata, with graceful handling of incomplete metadata and API failures.",
     ],
     tags: ["Java", "Spring Boot", "PostgreSQL", "REST API"],
-    repoUrl: "https://github.com/Likhitha2502", // TODO: replace with the exact repo URL
+    repoUrl: "https://gitlab.com/NagaBhavya/personal-library",
   },
 ];
 
