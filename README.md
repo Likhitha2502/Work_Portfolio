@@ -1,15 +1,5 @@
-# Likhitha Gudalwar — Portfolio
+# Likhitha Gudalwar
 
-A personal portfolio site built with React, TypeScript, and Vite. Content
-(experience, projects, skills, education, contact links) lives in one typed
-file, and the Projects section pulls your latest public repos live from the
-GitHub API — no backend required.
+Software Engineer with 4+ years of experience in React, TypeScript, and Angular. Outside of work, I enjoy reading, taking in a good scenic view, and spending time with my loved ones.
 
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-Opens at `http://localhost:5173`. Changes hot-reload automatically.
+🔗 **Know more about me:** [likhitha2502.github.io/Work_Portfolio](https://likhitha2502.github.io/Work_Portfolio/)
