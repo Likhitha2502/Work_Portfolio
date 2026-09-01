@@ -11,12 +11,12 @@ export const profile = {
   location: "Malden, MA",
   openToRelocation: true,
   status:
-    "Open to front-end engineer, React developer, and QA/SDET roles in New England",
+    "Open to Software engineer, Front-end Engineer and React developer roles (open to relocation)",
   email: "likhithagudalwar@gmail.com",
   linkedin: "https://www.linkedin.com/in/likhitha-gudalwar/",
   github: "https://github.com/Likhitha2502",
   githubUsername: "Likhitha2502",
-  resumeFile: "/resume.pdf",
+  resumeFile: "/Likhitha_S_Gudalwar_Resume.pdf",
   about:
     "I'm a Front-End Software Engineer with 4+ years of experience building responsive, high-performance interfaces in React and TypeScript. Most of that time was spent inside a real-time network control center, turning live geospatial and telemetry data into interfaces engineers can actually act on. Outside my day job, I'm pursuing an M.S. in Computer Information Sciences with a focus on software engineering and testing, and building full-stack side projects to round out my testing and backend fluency.",
 };
@@ -36,14 +36,16 @@ export const experience: ExperienceEntry[] = [
     org: "AES Corporation",
     dates: "July 2022 - Present",
     bullets: [
-      "Eliminated freezing on a data-heavy geo page by implementing React virtualization within a Mapbox (react-map-gl) interface, rendering 11,000+ item datasets in ~2 seconds once data was received from the backend.",
-      "Delivered front-end features on schedule across 60+ two-week Scrum sprints and the team's later shift to Kanban, partnering with a 9-person cross-functional team that included backend engineers, UX designers, product managers, and business analysts to translate requirements into polished, cross-browser-consistent interfaces.",
-      "Built and maintained cross-browser React.js and TypeScript components integrated with RESTful APIs via fetch and Axios, keeping behavior consistent across Chrome, Firefox, and Safari.",
-      "Drove front-end architectural decisions by building and maintaining 75+ React components over the project's four-year lifecycle, consolidating recurring UI patterns like modals, icons, and form components into shared, global components and cutting duplicate code across an estimated 25% of the application's UI.",
-      "Sped up a heavily-loaded toggle-list page from roughly 7 seconds of lag to under 1 second by implementing front-end pagination (100 items per page) alongside code-splitting, memoization, and lazy loading.",
-      "Strengthened code quality by writing Jest unit and integration tests (80%+ coverage on feature slices) and reviewing pull requests before they reached QA, holding the team's front-end defect rate to roughly 1-2 bugs a month.",
-      "Sustained real-time data flow from field hardware by maintaining persistent WebSocket connections with a 5-second connection health check, handling that state reactively with RxJS and Redux-Observable for import/export API flows.",
-      "Streamlined deployability by managing GitLab feature branches, pull requests, and code reviews as part of a CI/CD workflow that deployed to the dev environment on ticket merge and to QA weekly.",
+      "Resolved a freezing issue on the platform's data-heavy geo page, surfaced by a customer instance visualizing alerts and faults across 1,500+ deployed units (subscribers, hybrids, iplinks), implementing React virtualization within a Mapbox (react-map-gl) interface to render 11,000+ fault entries in ~2 second post-fetch.",
+      "Executed front-end features on schedule across 60+ two-week Scrum sprints and the team's later shift to Kanban, partnering with a 9-person cross-functional team (backend, UX, product, business analysts) to translate requirements into polished, cross-browser interfaces.",
+      "Engineered production ready React/TypeScript components each sprint from Figma design specs, converting UI designer handoffs (layouts, SVGs, interaction states) into reusable components integrated with RESTful APIs via fetch and Axios.",
+      "Minimized duplicate code across an estimated 25% of the application's UI by consolidating recurring patterns, including modals, icons, and form components, into 75+ reusable global React components, driving front-end architectural decisions.",
+      "Optimized a heavily loaded toggle-list page from ~7 seconds of lag to under 1 second by implementing front-end pagination (100 items per page) alongside code-splitting, memoization, and lazy loading.",
+      "Improved code quality by documenting UI components in Storybook with isolated interaction tests for foundational elements (form inputs, submit buttons, dialog/modal) and writing Jest unit and integration tests (80%+ coverage on feature slices), holding the team's defect rate to ~1-2 bugs/month.",
+      "Ensured real-time data flow from field hardware via persistent WebSocket connections with 5-second health checks, handling that state reactively with RxJS and Redux-Observable for import/export API flows.",
+      "Coordinated code reviews, pull requests, and merge requests across GitLab branches, maintaining clean, peer-reviewed code before it reached the dev and QA environments.",
+      "Delivered patch releases for a legacy PHP-based Network Management System, the predecessor platform Intellinet Network Control Center (INCC) evolved from, keeping the older system stable for the field users who still rely on it.",
+      "Assisted a 6-month intern on the INCC team by clarifying task requirements and troubleshooting codebase questions."
     ],
   },
 ];
@@ -61,33 +63,33 @@ export interface ProjectEntry {
 
 export const featuredProjects: ProjectEntry[] = [
   {
-    name: "ProcastiNot",
-    role: "Frontend Lead",
-    dates: "Mar 2026 - Present",
-    description: "Task manager with a built-in focus-timer, built by a 3-person team.",
-    bullets: [
-      "Directed front-end architecture and API integration as Frontend Lead on a 3-person team.",
-      "Built the full task lifecycle - create, edit, delete, sort, and filter - through modal forms for priority, due date, and status.",
-      "Implemented JWT-based authentication across registration, login, and forgot-password flows, validated on both client and server.",
-      "Managed application state with Redux (react-redux), holding 85%+ Jest coverage across reducers, actions, selectors, and epics.",
-      "Rebuilding the frontend in Angular 19 (in progress) with NgRx, Angular Material, and Reactive Forms.",
-      "Evaluated UI color contrast, text readability, and overall usability for users with accessibility needs using browser accessibility tools.",
-    ],
-    tags: ["React", "Redux", "JWT", "Jest", "Angular 19", "NgRx"],
-    repoUrl: "https://github.com/Likhitha2502/ProcastiNot_Project",
-  },
-  {
     name: "Readopotamus",
     role: "Backend Developer",
     dates: "July 2026 - Present",
     description: "Full-stack reading tracker supporting five reading formats, built by a 2-person team.",
     bullets: [
-      "Designed REST APIs with Java and Spring Boot for secure, private access to each user's reading data.",
-      "Modeled a normalized PostgreSQL schema supporting five reading formats with page-based and percentage-based progress tracking.",
-      "Integrated the Open Library REST API for book search and metadata, with graceful handling of incomplete metadata and API failures.",
+      "Developed and containerized 19+ REST APIs with Java, Spring Boot, and Docker for consistent dev environment parity, securing private access to each user's reading data through self-designed JWT authentication, and modeling a normalized PostgreSQL schema supporting five reading formats with page-based and percentage-based progress tracking.",
+      "Strengthened API reliability by writing unit tests for service classes and implementing a global exception handler with custom cases for specific error scenarios, returning meaningful errors for invalid input and data failures.",
+      "Integrated the Open Library REST API for book, author, and title search, parsing and reformatting response data into the application's schema, with graceful handling of incomplete metadata and API failures."
     ],
-    tags: ["Java", "Spring Boot", "PostgreSQL", "REST API"],
+    tags: ["Java", "Spring Boot", "PostgreSQL", "REST API", "JWT", "Postman"],
     repoUrl: "https://gitlab.com/NagaBhavya/personal-library",
+  },
+  {
+    name: "ProcastiNot",
+    role: "Frontend Lead",
+    dates: "Mar 2026 - Present",
+    description: "Task manager with a built-in focus-timer, built by a 3-person team.",
+    bullets: [
+      "Directed front-end development on a 3-person team, coordinating UI/component architecture decisions through team consensus and overseeing API integration for a task management app with built-in focus-timer sessions.",
+      "Implemented the full front-end task lifecycle (create, edit, delete) through modal forms supporting priority levels, due dates, and status, with client-side sorting and filtering across the task list.",
+      "Enforced secure API access by attaching backend-issued JWT tokens to every authenticated request, supporting registration, login, and forgot-password flows with client-side validation.",
+      "Structured application state with Redux (react-redux) and wrote unit tests for reducers, actions, selectors, and epics using Jest, keeping coverage above 85%.",
+      "Modernizing the front-end from React to Angular 19 (in progress), preserving existing feature parity while adopting NgRx (Store and Effects), Angular Material, and Reactive Forms.",
+      "Assessed UI color contrast, text readability, and overall usability for accessibility using Chrome DevTools during manual and system testing, in the absence of a dedicated QA team."
+    ],
+    tags: ["React", "TypeScript", "Redux", "JWT", "Jest", "Angular 19", "NgRx"],
+    repoUrl: "https://github.com/Likhitha2502/ProcastiNot_Project",
   },
 ];
 
@@ -112,7 +114,11 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    label: "State Management & Reactive",
+    label: "Design & Component Tooling",
+    items: ["Figma (design-to-code implementation)", "Storybook (component documentation & interaction testing)", "Material UI"]
+  },
+  {
+    label: "State Management & Reactive Programming",
     items: ["Redux", "Redux-Observable", "RxJS", "NgRx (Store, Effects)"],
   },
   {
@@ -130,8 +136,12 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    label: "APIs & Backend (Familiar)",
-    items: ["RESTful APIs", "SQL", "PostgreSQL", "MySQL", "Java", "Spring Boot", "PHP"],
+    label: "Backend Development",
+    items: ["RESTful APIs", "Java", "Spring Boot", "JWT Authentication"],
+  },
+  {
+    label: "Databases",
+    items: ["SQL", "PostgreSQL", "MySQL", "PHP"]
   },
   {
     label: "CS Fundamentals",
