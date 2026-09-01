@@ -16,7 +16,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/likhitha-gudalwar/",
   github: "https://github.com/Likhitha2502",
   githubUsername: "Likhitha2502",
-  resumeFile: "/resume.pdf",
+  resumeFile: "/Likhitha_S_Gudalwar_Resume.pdf",
   about:
     "I'm a Front-End Software Engineer with 4+ years of experience building responsive, high-performance interfaces in React and TypeScript. Most of that time was spent inside a real-time network control center, turning live geospatial and telemetry data into interfaces engineers can actually act on. Outside my day job, I'm pursuing an M.S. in Computer Information Sciences with a focus on software engineering and testing, and building full-stack side projects to round out my testing and backend fluency.",
 };
@@ -45,7 +45,7 @@ export const experience: ExperienceEntry[] = [
       "Ensured real-time data flow from field hardware via persistent WebSocket connections with 5-second health checks, handling that state reactively with RxJS and Redux-Observable for import/export API flows.",
       "Coordinated code reviews, pull requests, and merge requests across GitLab branches, maintaining clean, peer-reviewed code before it reached the dev and QA environments.",
       "Delivered patch releases for a legacy PHP-based Network Management System, the predecessor platform Intellinet Network Control Center (INCC) evolved from, keeping the older system stable for the field users who still rely on it.",
-      "Assisted a 6-month intern on the INCC team by clarifying task requirements and troubleshooting codebase questions, helping them ramp up with confidence."
+      "Assisted a 6-month intern on the INCC team by clarifying task requirements and troubleshooting codebase questions."
     ],
   },
 ];
